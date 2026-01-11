@@ -1,0 +1,137 @@
+print("hello world")
+#beri komentar perbaris dengan tanda (#)
+"""beri komentar berbaris-baris dengan tanda petik 3 kali"""
+
+"""Cara agar python bisa lebih cepat ialah
+dengan mengcompile source codenya dulu. Bisa dibilang 
+diterjemahkan ulang secara manual"""
+
+#VARIABEL
+"""Contoh
+X = 2
+    X (disebut Variabel)
+    = (disebut assignment)
+    2 (disebut value)"""
+
+#PENULISAN VARIABEL DAN VALUE
+"""1. Menyambung kata dengan underscore (_)
+    contoh"""
+taman_bunga = 10
+print("- contoh taman bunga: ", taman_bunga)
+
+"""2. Menggunakan huruf kapital
+    contoh"""
+gunungFuji = 5
+print("- contoh gunungFuji: ", gunungFuji)
+
+"""3. Penulisan nominal di depan angka
+     (variable yang mengandung angka)
+    contoh: 10juta -> juta10"""
+juta5 = 5000000
+print ("- contoh juta5 ", juta5)
+
+#PEMANGGILAN
+"""1. Menambahkan kalimat pada panggilan
+    contoh"""
+nilaiMTK_kemarin = 85
+print ("- contoh nilai MTK saya kemarin = ", nilaiMTK_kemarin)
+
+"""2. Merubah value yang telah dipanggil
+    contoh"""
+nilaiMTK_hariini = 90
+print ("- contoh nilai MTK saya hari ini = ", nilaiMTK_hariini)
+
+"""3. Menyebut variabel lain dengan value yang sama
+    contoh"""
+nilaiOlahraga = nilaiMTK_kemarin
+print ("- contoh nilai olahraga : ", nilaiOlahraga)
+
+#TIPE DATA
+"""1. TIPE DATA INTEGER
+Integer adalah tipe data angka satuan
+    contoh"""
+tanggal = 1
+print ("contoh integer : ",tanggal)
+print ("tipe data tanggal:", type (tanggal))
+
+"""2. TIPE DATA FLOAT
+Float adalah tipe data angka dengan koma (desimal)
+    contoh"""
+suhuTubuh = 36.2
+print ("contoh float: ", suhuTubuh)
+print ("tipe data suhuTubuh: ", type (suhuTubuh))
+
+"""3. TIPE DATA STRING
+String adalah tipe data dari huruf
+    contoh"""
+nama = "lala" #harus pakai petik dua
+print ("contoh string:", nama )
+print ("tipe data nama: ", type (nama))
+
+"""4 TIPE DATA BOOLEAN
+Boolean adalah tipe data yang mengandung TRUE/FALSE
+    contoh"""
+penilaian = False
+print ("contoh boolean:", penilaian )
+print ("tipe data penilaian: ", type (penilaian))
+
+"""5. TIPE DATA LIST
+List adalah tipe data seperti daftar, ditulis
+dengan kurung siku [] dan, kalo list berupa angka, tidak
+perlu pakai kutip
+    contoh"""
+listBelanja = ["garem, gula"] 
+print ("contoh list:", listBelanja)
+print ("tipe data listBelanja: ", type (listBelanja))
+
+listBarang = [10,20]
+print ("contoh list:", listBarang )
+print ("tipe data listBelanja: ", type (listBarang))
+
+"""6. TIPE DATA SET
+Set adalah tipe data yang di dalamnya tidak boleh
+ada data kembar, urutan data tidak dianggap penting,
+dan ditulis pakai kurung kurawal {}
+    contoh"""
+ruangKelas = {701,705, 701,708} #701 dihapus salah satunya
+print ("contoh set: ", ruangKelas)
+print ("tipe data ruangKelas: ", type (ruangKelas))
+
+"""7. TIPE DATA COMPLEX
+Complex adalah tipe data berupa bilangan riil dan
+imajiner (imajiner ialah gabungan angka dengan huruf)
+    contoh"""
+x = complex (3,4) #bisa gunakan fungsi complex
+print ("contoh complex: ", x)
+print ("tipe data suhuUdara: ", type(x))
+
+"""8. TIPE DATA TUPLE
+Tuple adalah kumpulan data yang berurutan, tidak bisa
+diubah, dan ditulis pakai ()
+    contoh"""
+koordinat = (5,10)
+print ("contoh tuple: ", koordinat)
+print ("tipe data koordinat: ", type(koordinat))
+
+"""9. TIPE DATA DICT (DICTIONARY)
+Dictionary adalah tipe data label, biasanya digunakan
+untuk form / data administrasi, ditulis pakai {}
+    contoh"""
+biodata = {
+    "nama": "fauzi",
+    "umur": 25,
+    "kelamin": "laki-laki"
+}
+print ("contoh dict: ", biodata)
+print ("tipe data biodata: ", type(biodata))
+print (biodata["nama"]) #cara panggil data dict
+print (biodata["umur"]) #cara panggil data dict
+
+"""10. TIPE DATA DARI BAHASA C
+Tipe data ini menggunakan kata kunci
+from ctypes import ... (masukan jenis c)
+    contoh"""
+from ctypes import c_double
+bahasa = c_double(3.5)
+print ("contoh bahasa c: ", bahasa)
+print ("tipe data bahasa: ", type(bahasa))
